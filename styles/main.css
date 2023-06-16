@@ -6,19 +6,19 @@ header {
 }
 
 nav {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: flex;
   justify-content: center;
 }
 
 nav li {
-  display: inline;
   margin: 0 10px;
 }
 
@@ -33,6 +33,7 @@ nav a:hover {
   background-color: #555;
   border-radius: 5px;
 }
+
 
 
 
