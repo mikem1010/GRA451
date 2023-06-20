@@ -46,5 +46,18 @@
   <footer>
     <!-- Footer content -->
   </footer>
+  <!-- Place this script at the end of your contact.html file, before the closing </body> tag -->
+<script>
+  $(document).ready(function() {
+    // Open the pop-up when the page loads
+    $("#popup-container").fadeIn();
+
+    // Close the pop-up when the "Close" button is clicked
+    $("#close-button").click(function() {
+      $("#popup-container").fadeOut();
+    });
+  });
+</script>
+
 </body>
 </html>
