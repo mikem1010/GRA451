@@ -171,6 +171,7 @@ footer {
 }
 
 /* CSS for the navigation menu */
+/* CSS for the navigation menu */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -213,6 +214,26 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+
+/* CSS for the hamburger button */
+.hamburger-menu {
+  display: none;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+/* Adjust the hamburger button for mobile devices */
+@media screen and (max-width: 767px) {
+  .hamburger-menu {
+    display: block;
+  }
+}
+
 
 
 
