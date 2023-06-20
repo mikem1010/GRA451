@@ -1,4 +1,4 @@
-/* Add this CSS to your main.css file or a separate CSS file */
+/* Update the CSS for the pop-up container */
 #popup-container {
   position: fixed;
   top: 0;
@@ -12,6 +12,7 @@
   z-index: 9999; /* Ensure the pop-up appears above other elements */
 }
 
+/* Update the CSS for the pop-up content */
 #popup-content {
   background-color: #fff;
   padding: 20px;
