@@ -87,19 +87,22 @@
     var lastName = $("#last-name").val();
     var email = $("#email").val();
 
+    // Remove previous validation messages
+    $(".validation-message").remove();
+
     // Perform validation checks
     if (firstName.trim() === "") {
-      alert("Please enter your first name.");
+      $("<span class='validation-message'>Please enter your first name.</span>").insertAfter("#first-name");
       return;
     }
 
     if (lastName.trim() === "") {
-      alert("Please enter your last name.");
+      $("<span class='validation-message'>Please enter your last name.</span>").insertAfter("#last-name");
       return;
     }
 
     if (email.trim() === "") {
-      alert("Please enter your email address.");
+      $("<span class='validation-message'>Please enter your email address.</span>").insertAfter("#email");
       return;
     }
 
@@ -109,6 +112,7 @@
     this.submit();
   });
 });
+
 
 </script>
   
