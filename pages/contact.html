@@ -75,5 +75,42 @@
   });
 </script>
 
+<!-- Place this script at the end of your contact.html file, before the closing </body> tag -->
+<script>
+  $(document).ready(function() {
+    // Form submission event handler
+    $("#contact-form").submit(function(event) {
+      // Prevent the form from submitting
+      event.preventDefault();
+
+      // Validate the form fields
+      var firstName = $("#first-name").val();
+      var lastName = $("#last-name").val();
+      var email = $("#email").val();
+
+      // Perform validation checks
+      if (firstName === "") {
+        alert("Please enter your first name.");
+        return;
+      }
+
+      if (lastName === "") {
+        alert("Please enter your last name.");
+        return;
+      }
+
+      if (email === "") {
+        alert("Please enter your email address.");
+        return;
+      }
+
+      // Additional validation checks can be added here
+
+      // If all validations pass, submit the form
+      this.submit();
+    });
+  });
+</script>
+  
 </body>
 </html>
