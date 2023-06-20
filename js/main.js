@@ -31,3 +31,9 @@ $(document).ready(function() {
   });
 });
 
+// Add this JavaScript/jQuery code to handle the toggle functionality
+$(document).ready(function() {
+  $(".hamburger-menu").click(function() {
+    $("nav ul").slideToggle();
+  });
+});
