@@ -279,3 +279,12 @@ nav ul li a:hover::after {
   font-size: 12px;
   margin-top: 5px;
 }
+/* CSS for required inputs */
+.required-input:invalid {
+  border-color: red;
+}
+
+/* CSS for required text */
+.required-input:invalid::placeholder {
+  color: red;
+}
