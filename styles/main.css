@@ -273,3 +273,9 @@ nav ul li a:hover::after {
 #close-button {
   margin-top: 10px;
 }
+
+.validation-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
