@@ -7,7 +7,15 @@
   <link rel="stylesheet" href="../styles/main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../js/main.js"></script>
+  <style>
+    .required-input:invalid {
+      border-color: red;
+    }
 
+    .required-input:invalid::placeholder {
+      color: red;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -19,19 +27,19 @@
         <li><a href="../pages/contact.html">Contact</a></li>
       </ul>
       <div class="hamburger-menu">
-  <div class="hamburger-icon"></div>
-</div>
+        <div class="hamburger-icon"></div>
+      </div>
     </nav>
   </header>
 
-<!-- pop up -->
-<div id="popup-container">
-  <div id="popup-content">
-    <h2>Get a free cup of Java</h2>
-    <p>Fill out the form, and we'll buy your next cup of coffee!</p>
-    <button id="close-button">Close</button>
+  <!-- pop up -->
+  <div id="popup-container">
+    <div id="popup-content">
+      <h2>Get a free cup of Java</h2>
+      <p>Fill out the form, and we'll buy your next cup of coffee!</p>
+      <button id="close-button">Close</button>
+    </div>
   </div>
-</div>
 
   <!-- Contact section -->
   <section class="contact">
@@ -40,21 +48,21 @@
       <div class="contact-info">
         <!-- Contact information goes here -->
       </div>
-     <form id="contact-form" action="#" method="POST">
-  <div class="form-group">
-    <label for="first-name">First Name:</label>
-    <input type="text" id="first-name" name="first-name" required>
-  </div>
-  <div class="form-group">
-    <label for="last-name">Last Name:</label>
-    <input type="text" id="last-name" name="last-name" required>
-  </div>
-  <div class="form-group">
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-  <button type="submit">Submit</button>
-</form>
+      <form id="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" class="required-input" required>
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" class="required-input" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" class="required-input" required>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </section>
 
@@ -63,58 +71,55 @@
     <!-- Footer content -->
   </footer>
   <!-- Place this script at the end of your contact.html file, before the closing </body> tag -->
-<script>
-  $(document).ready(function() {
-    // Open the pop-up when the page loads
-    $("#popup-container").fadeIn();
+  <script>
+    $(document).ready(function() {
+      // Open the pop-up when the page loads
+      $("#popup-container").fadeIn();
 
-    // Close the pop-up when the "Close" button is clicked
-    $("#close-button").click(function() {
-      $("#popup-container").fadeOut();
+      // Close the pop-up when the "Close" button is clicked
+      $("#close-button").click(function() {
+        $("#popup-container").fadeOut();
+      });
     });
-  });
-</script>
+  </script>
 
-<!-- Place this script at the end of your contact.html file, before the closing </body> tag -->
-<script>
-  $(document).ready(function() {
-  // Form submission event handler
-  $("#contact-form").submit(function(event) {
-    event.preventDefault();
+  <!-- Place this script at the end of your contact.html file, before the closing </body> tag -->
+  <script>
+    $(document).ready(function() {
+      // Form submission event handler
+      $("#contact-form").submit(function(event) {
+        event.preventDefault();
 
-    // Get the form values
-    var firstName = $("#first-name").val();
-    var lastName = $("#last-name").val();
-    var email = $("#email").val();
+        // Get the form values
+        var firstName = $("#first-name").val();
+        var lastName = $("#last-name").val();
+        var email = $("#email").val();
 
-    // Remove previous validation messages
-    $(".validation-message").remove();
+        // Remove previous validation messages
+        $(".validation-message").remove();
 
-    // Perform validation checks
-    if (firstName.trim() === "") {
-      $("<span class='validation-message'>Please enter your first name.</span>").insertAfter("#first-name");
-      return;
-    }
+        // Perform validation checks
+        if (firstName.trim() === "") {
+          $("<span class='validation-message'>Please enter your first name.</span>").insertAfter("#first-name");
+          return;
+        }
 
-    if (lastName.trim() === "") {
-      $("<span class='validation-message'>Please enter your last name.</span>").insertAfter("#last-name");
-      return;
-    }
+        if (lastName.trim() === "") {
+          $("<span class='validation-message'>Please enter your last name.</span>").insertAfter("#last-name");
+          return;
+        }
 
-    if (email.trim() === "") {
-      $("<span class='validation-message'>Please enter your email address.</span>").insertAfter("#email");
-      return;
-    }
+        if (email.trim() === "") {
+          $("<span class='validation-message'>Please enter your email address.</span>").insertAfter("#email");
+          return;
+        }
 
-    // Additional validation checks can be added here
+        // Additional validation checks can be added here
 
-    // If all validations pass, submit the form
-    this.submit();
-  });
-});
-
-
-</script>
-  
+        // If all validations pass, submit the form
+        this.submit();
+      });
+    });
+  </script>
 </body>
 </html>
