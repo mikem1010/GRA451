@@ -1,69 +1,4 @@
-/* Update the CSS for the pop-up container */
-#popup-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999; /* Ensure the pop-up appears above other elements */
-}
-
-/* Update the CSS for the pop-up content */
-#popup-content {
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid black;
-}
-
-#close-button {
-  margin-top: 10px;
-}
-
-
 /* Reset default margin and padding */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav li {
-  margin: 0 10px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-}
-
-nav a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
-
-
-
-
 body, h1, h2, p {
   margin: 0;
   padding: 0;
@@ -232,98 +167,7 @@ nav a {
 footer {
   background-color: #333;
   color: #fff;
-  padding: 20
-  
-/* Reset default margin and padding */
-body, h1, h2, p {
-  margin: 0;
-  padding: 0;
-}
-
-/* Global styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 20px;
-}
-
-/* Header styles */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  margin: 0 10px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-}
-
-nav a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
-
-/* Coffee Options section styles */
-.coffee-options {
-  background-color: #fff;
-  padding: 40px 0;
-}
-
-.coffee-options h2 {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.coffee-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.coffee-item {
-  background-color: #f9f9f9;
-  padding: 20px;
-  text-align: center;
-}
-
-.coffee-item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.coffee-item h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.coffee-item p {
-  font-size: 16px;
-  margin-bottom: 10px;
 }
 
 /* CSS for the navigation menu */
@@ -353,29 +197,6 @@ nav ul li a {
 nav ul li a:hover {
   color: #ff5722;
 }
-/* Default navigation styles */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
 
 /* Media query for mobile devices */
 @media screen and (max-width: 767px) {
@@ -389,6 +210,7 @@ nav ul li a {
     margin-bottom: 10px;
   }
 }
+
 /* CSS for the hamburger button */
 .hamburger-menu {
   display: none;
@@ -406,4 +228,30 @@ nav ul li a {
   .hamburger-menu {
     display: block;
   }
+}
+
+/* CSS for the popup container */
+#popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure the popup appears above other elements */
+}
+
+/* CSS for the popup content */
+#popup-content {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#close-button {
+  margin-top: 10px;
 }
