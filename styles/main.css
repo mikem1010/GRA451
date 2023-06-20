@@ -190,13 +190,14 @@ nav ul li:last-child {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #888;
   font-weight: bold;
 }
 
 nav ul li a:hover {
   color: #ff5722;
 }
+
 
 /* Media query for mobile devices */
 @media screen and (max-width: 767px) {
