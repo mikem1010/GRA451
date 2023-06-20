@@ -1,4 +1,4 @@
-/* Add this CSS to your main.css file or a separate CSS file */
+/* pop up css */
 #popup-container {
   position: fixed;
   top: 0;
@@ -15,11 +15,14 @@
   background-color: #fff;
   padding: 20px;
   text-align: center;
+  border: 1pt solid black;
+  display: none;
 }
 
 #close-button {
   margin-top: 10px;
 }
+
 
 
 /* Reset default margin and padding */
