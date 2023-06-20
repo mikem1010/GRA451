@@ -389,3 +389,21 @@ nav ul li a {
     margin-bottom: 10px;
   }
 }
+/* CSS for the hamburger button */
+.hamburger-menu {
+  display: none;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+/* Adjust the hamburger button for mobile devices */
+@media screen and (max-width: 767px) {
+  .hamburger-menu {
+    display: block;
+  }
+}
