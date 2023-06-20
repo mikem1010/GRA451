@@ -171,6 +171,22 @@ footer {
 }
 
 /* CSS for the navigation menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -197,6 +213,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+
 
 
 /* Media query for mobile devices */
