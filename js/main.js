@@ -1,39 +1,33 @@
-// Add this jQuery code to your main.js file or a separate JavaScript file
 $(document).ready(function() {
-  // Show the pop-up when the page loads
-  $("#popup-container").show();
+  // Open the pop-up when the page loads
+  $("#popup-container").fadeIn();
 
   // Close the pop-up when the "Close" button is clicked
   $("#close-button").click(function() {
-    $("#popup-container").hide();
+    $("#popup-container").fadeOut();
   });
-});
 
-// Add this JavaScript code to your main.js file or a separate JavaScript file
-$(document).ready(function() {
-  // Handle form submission
+  // Form submission event handler
   $("#contact-form").submit(function(event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
 
-    // Get the form data
+    // Get the form values
     var firstName = $("#first-name").val();
     var lastName = $("#last-name").val();
     var email = $("#email").val();
 
-    // Perform validation if needed
-    // ...
+    // Remove previous validation messages
+    $(".validation-message").remove();
 
-    // Perform form processing or send data to the server
-    // ...
+    // Perform validation checks
+    if (!firstName) {
+      $("<span class='validation-message'>Please enter your first name.</span>").insertAfter("#first-name");
+      return;
+    }
 
-    // Reset the form fields after submission
-    $("#contact-form")[0].reset();
-  });
-});
+    // Rest of the validation checks...
 
-// Add this JavaScript/jQuery code to handle the toggle functionality
-$(document).ready(function() {
-  $(".hamburger-menu").click(function() {
-    $("nav ul").slideToggle();
+    // If all validations pass, submit the form
+    this.submit();
   });
 });
