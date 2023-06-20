@@ -1,4 +1,4 @@
-// Update the jQuery code in your main.js file or a separate JavaScript file
+// Add this jQuery code to your main.js file or a separate JavaScript file
 $(document).ready(function() {
   // Open the pop-up when the page loads
   $("#popup-container").fadeIn();
@@ -8,3 +8,4 @@ $(document).ready(function() {
     $("#popup-container").fadeOut();
   });
 });
+
