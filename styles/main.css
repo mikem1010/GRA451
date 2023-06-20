@@ -214,8 +214,6 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-
-
 /* Media query for mobile devices */
 @media screen and (max-width: 767px) {
   /* Adjust the navigation layout for mobile devices */
@@ -278,13 +276,4 @@ nav ul li a:hover::after {
   color: red;
   font-size: 12px;
   margin-top: 5px;
-}
-/* CSS for required inputs */
-.required-input:invalid {
-  border-color: red;
-}
-
-/* CSS for required text */
-.required-input:invalid::placeholder {
-  color: red;
 }
