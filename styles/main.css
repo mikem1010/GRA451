@@ -171,31 +171,31 @@ footer {
 }
 
 /* CSS for the navigation menu */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-}
-
 nav ul li a {
   text-decoration: none;
-  color: #888;
+  color: white;
   font-weight: bold;
+  position: relative;
 }
 
 nav ul li a:hover {
-  color: #ff5722;
+  color: #888;
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #888;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
 }
 
 
