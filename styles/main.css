@@ -338,3 +338,21 @@ nav ul li a:hover::after {
   padding: 10px 20px;
   font-size: 16px;
 }
+
+/* Rest of your CSS styles */
+
+/* CSS for the logo */
+.logo {
+  text-align: center;
+  margin-bottom: 20px; /* Add spacing below the logo if needed */
+}
+
+.logo a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
+}
