@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +7,19 @@
    <link rel="stylesheet" href="styles/main.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="js/main.js"></script>
+   <style>
+     .hero-image {
+       width: 100%;
+       height: auto;
+     }
+
+     /* Media query to hide the image on small screens */
+     @media screen and (max-width: 767px) {
+       .hero-image {
+         display: none;
+       }
+     }
+   </style>
 </head>
 
 <body>
@@ -30,6 +41,17 @@
       </div>
     </nav>
   </header>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <h1>Welcome to Java Been</h1>
+    <p>Discover the finest coffee in town</p>
+  </section>
+
+  <!-- Add the image below the header -->
+  <img src="assets/HomeHero.png" alt="Home Hero Image" class="hero-image">
+
+  <!-- Rest of your content -->
 
 
   <!-- About section -->
