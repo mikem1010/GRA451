@@ -85,7 +85,14 @@
 -->
   <!-- Footer -->
   <footer>
-    <!-- Footer content -->
-  </footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Java Been. All rights reserved.</p>
+  </div>
+</footer>
+
+     <script>
+    var currentYear = new Date().getFullYear();
+    document.getElementById("year").textContent = currentYear;
+  </script>
 </body>
 </html>
