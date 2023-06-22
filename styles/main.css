@@ -356,3 +356,8 @@ nav ul li a:hover::after {
   width: 150px; /* Adjust the width as needed */
   height: auto;
 }
+/* Add a class to target the coffee image */
+.coffee-image {
+  max-width: 100%;
+  height: auto;
+}
